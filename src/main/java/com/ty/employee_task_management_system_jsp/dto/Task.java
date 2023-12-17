@@ -12,8 +12,19 @@ public class Task {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	private String description;
+	private String status;
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
 	public int getId() {
 		return id;
+	}
+	@Override
+	public String toString() {
+		return "Task [id=" + id + ", description=" + description + ", status=" + status + "]";
 	}
 	public void setId(int id) {
 		this.id = id;

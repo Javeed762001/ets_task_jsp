@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+
+  body{
+     display:flex;
+     justify-content:center;
+     align-items: center;
+  }
+
+  div{
+     height:400px;
+     width:400px;
+     background-color: bisque;
+     margin-top:100px;
+  }
+  form {
+
+	height:350px;
+    width:300px;
+    font-weight:bolder;
+    font-size: 25px;
+  }
+  
+  legend{
+    font-style: italic;
+    font-size: 25px;
+    font-weight: bold;
+  }
+ 
+
+</style>
+</head>
+
+<body>
+     
+     <div>
+     <fieldset>
+     <legend>EMPLOYEE LOGIN:</legend>
+     <form action="loginemp">
+ 
+     Email:<input type="text", name="user_email">
+     <br>
+     <br>
+     Password:<input type="password", name="user_password">
+     <br>
+     <br>
+     
+     <input type="submit", name="Login">
+     
+     </form>
+   </fieldset>
+   </div>
+</body>
+</html>
